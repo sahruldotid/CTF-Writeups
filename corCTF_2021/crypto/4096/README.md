@@ -117,5 +117,5 @@ print hex(x%n)[2:-1].decode("hex")
 
 **BONUS**: SAGE
 
-<img src="https://i.ibb.co/6RSHghw/sage.jpg" style="zoom:50%;" />
+<img src="https://i.ibb.co/6RSHghw/sage.jpg" style="zoom: 20%;" />
 
