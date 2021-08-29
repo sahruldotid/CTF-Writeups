@@ -1,6 +1,6 @@
 # Notes
 
-> You can always manage your notes ! !
+> You can always manage your notes
 > nc 40.71.72.198 1235
 
 
